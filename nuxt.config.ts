@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+    telemetry: false,
     compatibilityDate: '2024-08-30',
     future: {
         compatibilityVersion: 4,
@@ -6,6 +7,8 @@ export default defineNuxtConfig({
     experimental: {
         viewTransition: true,
         writeEarlyHints: true,
+        inlineRouteRules: true,
+        asyncContext: true,
     },
     devtools: { enabled: true },
     app: {
